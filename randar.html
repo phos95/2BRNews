@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О Нас</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <img src="map.png" alt="Карта" />
+        <div class="content">
+            <p>Привет, мы сейчас расскажем о себе</p>
+        </div>
+    </main>
+    <div class="contact-info">
+        <p>Email: example@example.com</p>
+        <p>Телефон: +7 (123) 456-7890</p>
+    </div>
+    <script>
+        // Функция для выбора случайного фона
+        function setRandomBackground() {
+            const backgrounds = ['fon1.png', 'fon2.png', 'fon.png'];
+            const randomIndex = Math.floor(Math.random() * backgrounds.length);
+            const selectedBackground = backgrounds[randomIndex];
+            document.body.style.backgroundImage = `url('${selectedBackground}')`;
+        }
+
+        // Устанавливаем случайный фон при загрузке страницы
+        window.onload = setRandomBackground;
+    </script>
+</body>
+</html>
