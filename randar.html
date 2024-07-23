@@ -8,7 +8,7 @@
 </head>
 <body>
     <main>
-        <img src="map.png" alt="Карта" />
+        <img src="img/map.png" alt="Карта" />
         <div class="content">
             <p>Привет, мы сейчас расскажем о себе</p>
         </div>
@@ -20,7 +20,7 @@
     <script>
         // Функция для выбора случайного фона
         function setRandomBackground() {
-            const backgrounds = ['fon1.png', 'fon2.png', 'fon.png'];
+            const backgrounds = ['img/fon1.png', 'img/fon2.png', 'img/fon.png'];
             const randomIndex = Math.floor(Math.random() * backgrounds.length);
             const selectedBackground = backgrounds[randomIndex];
             document.body.style.backgroundImage = `url('${selectedBackground}')`;
